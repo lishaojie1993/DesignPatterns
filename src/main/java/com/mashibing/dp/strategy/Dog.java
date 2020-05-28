@@ -3,9 +3,14 @@ package com.mashibing.dp.strategy;
 public class Dog implements Comparable<Dog> {
 
     int food;
+    int weight;
 
     public Dog(int food) {
         this.food = food;
+    }
+    public Dog(int food,int weight) {
+        this.food = food;
+        this.weight = weight;
     }
 
     @Override
@@ -19,6 +24,7 @@ public class Dog implements Comparable<Dog> {
     public String toString() {
         return "Dog{" +
                 "food=" + food +
+                ", weight=" + weight +
                 '}';
     }
 }
